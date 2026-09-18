@@ -33,13 +33,17 @@ When a file is dragged into the web composer, the browser upload surface can sen
 
 ## Install
 
-Publish source install:
+From npm (after publication):
 
 ```sh
 dsh plugin --profile web add dsh-upload-origin
 ```
 
-Or install a published tarball directly.
+Install the prebuilt tarball from GitHub Releases:
+
+```sh
+dsh plugin --profile web add https://github.com/wlc114514/dsh-upload-origin/releases/download/v0.1.0/dsh-upload-origin-0.1.0.tgz
+```
 
 The package declares `dsh.bundle`, so it installs through the normal DSH bundle/profile flow.
 

@@ -32,13 +32,17 @@
 
 ## 安装
 
-从源码安装：
+从 npm 安装（发布后）：
 
 ```sh
 dsh plugin --profile web add dsh-upload-origin
 ```
 
-或安装已发布的 tarball。
+安装 GitHub Release 里的预构建 tarball：
+
+```sh
+dsh plugin --profile web add https://github.com/wlc114514/dsh-upload-origin/releases/download/v0.1.0/dsh-upload-origin-0.1.0.tgz
+```
 
 包内声明了 `dsh.bundle`，可按 DSH 正常的 bundle/profile 流程安装。
 
