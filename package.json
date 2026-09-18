@@ -1,0 +1,57 @@
+{
+  "name": "dsh-upload-origin",
+  "version": "0.1.0",
+  "description": "DSH plugin: resolve the original local path of files uploaded to .dsh-uploads by matching name, size, and sha256.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "upload",
+    "file-path",
+    "sha256",
+    "drag-and-drop"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlc114514/dsh-upload-origin.git"
+  },
+  "homepage": "https://github.com/wlc114514/dsh-upload-origin#readme",
+  "bugs": {
+    "url": "https://github.com/wlc114514/dsh-upload-origin/issues"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-system-prompt": ">=0.1.2-rc.1",
+    "@deepseek-ai/dsh-tools": ">=0.1.2-rc.1",
+    "cordis": ">=4.0.0-rc.1"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

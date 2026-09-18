@@ -1,0 +1,5 @@
+# dsh-upload-origin bundle patch: one insert registering the host plugin.
+# The row id is scoped to this bundle; `name` must match the package name.
+- insert:
+    - id: upload-origin
+      name: 'dsh-upload-origin'
