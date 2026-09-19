@@ -33,12 +33,6 @@ When a file is dragged into the web composer, the browser upload surface can sen
 
 ## Install
 
-From npm (after publication):
-
-```sh
-dsh plugin --profile web add dsh-upload-origin
-```
-
 Install the prebuilt tarball from GitHub Releases:
 
 ```sh
